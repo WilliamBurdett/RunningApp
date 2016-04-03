@@ -18,7 +18,7 @@ export default class RunMap extends React.Component {
       key:Random.id()
     })
     this.setState(state);
-  }
+  } 
 
   handleMarkerRightclick(){
 
