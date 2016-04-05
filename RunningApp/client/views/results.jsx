@@ -5,6 +5,10 @@ export default class Results extends React.Component {
 		super(props);
 	}
 
+	componentWillMount(){
+		MainAppBarTitle.set("Results");
+	}
+
 	render(){
 		return (
 			<div>

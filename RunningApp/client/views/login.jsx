@@ -11,6 +11,10 @@ export default class Login extends React.Component{
 		this.routeToHome = this.routeToHome.bind(this);
 	}
 
+	componentWillMount(){
+		MainAppBarTitle.set("Login");
+	}
+
 	// getUser(){
 	// 	return Meteor.user();
 	// }

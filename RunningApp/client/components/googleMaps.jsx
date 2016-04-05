@@ -26,7 +26,7 @@ export default class RunMap extends React.Component {
 
   render () {
     return (
-    <section style={{height: "400px"}}>
+    <section style={{height: "100%"}}>
       <GoogleMapLoader
         containerElement={
           <div

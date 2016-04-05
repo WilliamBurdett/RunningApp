@@ -15,6 +15,14 @@ const routes = [
 	{
 		target:"login",
 		name:"Login"
+	},
+	{
+		target:"progress",
+		name:"Progess"
+	},
+	{
+		target:"startRun",
+		name:"StartRun"
 	}
 ]
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import MainAppBar from '/client/components/main-app-bar'
-import MainLeftNav from '/client/components/main-left-nav'
+import MainAppBar from '/client/components/main-app-bar';
+import MainLeftNav from '/client/components/main-left-nav';
 
 const appStyle = {
 	backgroundColor: "lightblue",
@@ -27,7 +27,7 @@ export default class App extends React.Component{
 	render(){
 		return (
 			<div style={appStyle}>
-				<MainAppBar onClickMenuToggle={this.onClickMenuToggle} />
+				<MainAppBar ref="mainAppBar" onClickMenuToggle={this.onClickMenuToggle} />
 				<MainLeftNav ref="leftNav" />
 				{this.props.children}
 			</div>

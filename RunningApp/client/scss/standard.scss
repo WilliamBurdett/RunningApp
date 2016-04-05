@@ -1,0 +1,40 @@
+$width: 95%;
+$margin: auto;
+
+.parentDiv{
+	height:100%;
+	width:100%;
+}
+
+.mapDiv{
+	background-color:red;
+	width:$width;
+	height: 40%;
+	margin: $margin;
+}
+
+.standDiv{
+	background-color:green;
+	width:$width;
+	height: 40%;
+	margin: $margin;
+}
+
+.buttonDiv{
+	background-color:pink;
+	width:45%;
+	height:45%;
+	padding:1.25%;
+	display:inline-block;
+	margin: $margin;
+}
+
+.flexContainer{
+	display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    align-items : center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}

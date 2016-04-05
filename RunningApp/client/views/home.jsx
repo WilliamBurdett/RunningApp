@@ -15,6 +15,7 @@ export default class Home extends TrackerReact(React.Component){
 
 	componentWillMount(){
 		SubsMgr.subscribe("allLocations");
+		MainAppBarTitle.set("Home");
 	}
 
 	fetchRecentLocation(){
@@ -46,7 +47,7 @@ export default class Home extends TrackerReact(React.Component){
 			This is the best homepage
 			{JSON.stringify(location)}
 			{button}
-			<RunMap ref="map"/>
+			{/*<RunMap ref="map"/>*/}
 		</div>
 	}
 
