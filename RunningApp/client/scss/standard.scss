@@ -1,40 +1,80 @@
 $width: 95%;
 $margin: auto;
 
-.parentDiv{
+.appStyle{
+	background-color:#252839;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	position:absolute;
+}
+
+.flexFill{
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: auto;
+}
+
+.topParent{
+	@extend .flexBasic;
+	@extend .flexFill;
+	flex-direction: column;
 	height:100%;
 	width:100%;
 }
 
-.mapDiv{
-	background-color:red;
-	width:$width;
-	height: 40%;
-	margin: $margin;
+.topChild{
+	@extend .flexBasic;
+	@extend .flexFill;
+	margin:10px;
 }
 
-.standDiv{
-	background-color:green;
-	width:$width;
-	height: 40%;
-	margin: $margin;
+.flexContainerRow{
+	@extend .flexCenteredContainer;
+	@extend .flexFill;
+	flex-wrap:nowrap;
+    flex-direction:row;
 }
 
-.buttonDiv{
-	background-color:pink;
-	width:45%;
-	height:45%;
-	padding:1.25%;
-	display:inline-block;
-	margin: $margin;
-}
-
-.flexContainer{
-	display: -webkit-flex;
-    display: flex;
-    flex-direction: row;
-    align-items : center;
+.flexCenteredContainer{
+  	@extend .flexBasic;
     align-content: center;
     justify-content: center;
+}
+
+.borderDark{
+	border-style:solid;
+	border-width:2px;
+	border-color:#252839;
+}
+
+.borderLight{
+	border-style:solid;
+	border-width:2px;
+	border-color:#b5b5b7;
+}
+
+.flexItem{
+  	@extend .flexBasic;
+  	@extend .borderDark;
+	background-color:#b5b5b7;
+	flex-grow:1;
+	margin-left:1.25%;
+	margin-right:0.625%;
+	margin-top:0.625%;
+	margin-bottom:0.625%;
+}
+
+.flexBasic{
+	display: -webkit-flex;
+	display:flex;
+}
+
+.flexContainerColumn{
+  	@extend .flexBasic;
+  	@extend .flexCenteredContainer;
+	background-color:#677077;
     flex-wrap: wrap;
+    flex-direction:column;
 }

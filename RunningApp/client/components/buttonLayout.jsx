@@ -9,18 +9,22 @@ export default class ButtonLayout extends React.Component {
 
   render(){
   	return (
-  		<div className="parentDiv flexContainer">
-  			<div className="buttonDiv">
-  				1
-  			</div>
-  			<div className="buttonDiv">
-  				2
-  			</div>
-  			<div className="buttonDiv">
-  				3
-  			</div>
-  			<div className="buttonDiv">
-  				4
+  		<div className="flexContainerColumn flexFill borderLight">
+  			<div className="flexContainerRow">
+	  			<div className="flexItem">
+	  				1
+	  			</div>
+	  			<div className="flexItem">
+	  				2
+	  			</div>
+	  		</div>
+	  		<div className="flexContainerRow">
+	  			<div className="flexItem">
+	  				3
+	  			</div>
+	  			<div className="flexItem">
+	  				4
+	  			</div>
   			</div>
   		</div>
   	)

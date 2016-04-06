@@ -26,7 +26,7 @@ export default class App extends React.Component{
 
 	render(){
 		return (
-			<div style={appStyle}>
+			<div className="topParent">
 				<MainAppBar ref="mainAppBar" onClickMenuToggle={this.onClickMenuToggle} />
 				<MainLeftNav ref="leftNav" />
 				{this.props.children}
