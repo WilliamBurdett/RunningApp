@@ -1,5 +1,5 @@
 import React from 'react';
-import ButtonLayout from '/client/components/buttonLayout'
+import TopLargeWithFourButtons from '/client/components/topLargeWithFourButtons'
 
 
 export default class Progress extends React.Component {
@@ -14,14 +14,7 @@ export default class Progress extends React.Component {
 	render(){
 		return(
 			<div className="topParent">
-					<div className="topChild flexContainerRow borderLight">
-						<div className="flexContainerRow">
-							Graphs!
-			  			</div>
-					</div>
-					<div className = "topChild flexContainerRow borderLight">
-						<ButtonLayout />
-					</div>
+					<TopLargeWithFourButtons />
 			</div>
 		);
 	}

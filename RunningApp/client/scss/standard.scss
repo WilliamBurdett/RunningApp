@@ -8,6 +8,7 @@ $margin: auto;
 	right:0;
 	bottom:0;
 	position:absolute;
+	color:white;
 }
 
 .flexFill{
@@ -16,12 +17,23 @@ $margin: auto;
 	flex-basis: auto;
 }
 
+.materialButton{
+	@extend .flexFill;
+	height:100%;
+}
+
 .topParent{
 	@extend .flexBasic;
 	@extend .flexFill;
 	flex-direction: column;
 	height:100%;
 	width:100%;
+}
+
+.buttonItem{
+	@extend .flexBasic;
+	@extend .flexItem;
+	color:black;
 }
 
 .topChild{

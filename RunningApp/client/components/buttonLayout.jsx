@@ -1,29 +1,35 @@
 import React from 'react';
+import RaisedButton from 'material-ui/lib/raised-button';
+
+const style = {
+	margin: "1%",
+	width:"98%",
+};
 
 export default class ButtonLayout extends React.Component {
-  constructor(props){
-    super(props);
+	constructor(props){
+		super(props);
 
 
-  }
+	}
 
   render(){
   	return (
   		<div className="flexContainerColumn flexFill borderLight">
   			<div className="flexContainerRow">
-	  			<div className="flexItem">
-	  				1
+	  			<div className="buttonItem">
+	  				<RaisedButton label="Default" style={style} />
 	  			</div>
-	  			<div className="flexItem">
-	  				2
+	  			<div className="buttonItem">
+	  				<RaisedButton label="Default" style={style} />
 	  			</div>
 	  		</div>
 	  		<div className="flexContainerRow">
-	  			<div className="flexItem">
-	  				3
+	  			<div className="buttonItem">
+	  				<RaisedButton label="Default" style={style} />
 	  			</div>
-	  			<div className="flexItem">
-	  				4
+	  			<div className="buttonItem">
+	  				<RaisedButton label="Default" style={style} />
 	  			</div>
   			</div>
   		</div>
