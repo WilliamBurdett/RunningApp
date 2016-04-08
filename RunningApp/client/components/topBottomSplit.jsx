@@ -1,8 +1,6 @@
 import React from 'react';
-import ButtonLayout from '/client/components/buttonLayout'
 
-
-export default class TopLargeWithFourButtons extends React.Component {
+export default class TopBottomSplit extends React.Component {
   constructor(props){
     super(props);
 
@@ -16,14 +14,9 @@ export default class TopLargeWithFourButtons extends React.Component {
   				{self.props.topSection}
 			</div>
 			<div className = "topChild flexContainerRow borderLight">
-				<ButtonLayout />
+				{self.props.bottomSection}
 			</div>
   		</div>
   		)
   	}
 }
-
-
-				// <div className="flexContainerRow">
-				// 	{self.props.topSection}
-	  	// 		</div>

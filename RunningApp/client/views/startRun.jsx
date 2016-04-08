@@ -1,6 +1,7 @@
 import React from 'react';
 import RunMap from '/client/components/googleMaps'
-import TopLargeWithFourButtons from '/client/components/topLargeWithFourButtons'
+import ButtonLayout from '/client/components/buttonLayout'
+import TopBottomSplit from '/client/components/topBottomSplit'
 
 
 export default class StartRun extends React.Component {
@@ -12,21 +13,13 @@ export default class StartRun extends React.Component {
 		MainAppBarTitle.set("Start Run");
 	}
 
-// <div className="parentDiv">
-// 				<div className="mapDiv">
-// 					<RunMap ref="map"/>
-// 				</div>
-// 				<div className = "standDiv">
-// 					<h1>Hello</h1>
-// 				</div>
-// 			</div>
-
 	render(){
 
 		var runMap = <RunMap />;
+		var buttons = <ButtonLayout />
 		return(
 			<div className="topParent">
-					<TopLargeWithFourButtons topSection={runMap} />
+					<TopBottomSplit bottomSection={buttons} topSection={runMap} />
 			</div>
 		);
 	}
