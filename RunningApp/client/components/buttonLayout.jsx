@@ -1,11 +1,6 @@
 import React from 'react';
 import RaisedButton from 'material-ui/lib/raised-button';
-
-const style = {
-	margin: "1%",
-	width:"98%",
-};
-
+import QuadSection from '/client/components/quadSection';
 
 export default class ButtonLayout extends React.Component {
 	constructor(props){
@@ -15,25 +10,24 @@ export default class ButtonLayout extends React.Component {
 	}
 
   render(){
+  	var self = this;
+  	var upLeft = <RaisedButton label={self.props.upLeftLabel} fullWidth={true} />;
+  	var upRight = <RaisedButton label={self.props.upRightLabel} fullWidth={true} />;
+  	var downLeft = <RaisedButton label={self.props.downLeftLabel} fullWidth={true} />;
+  	var downRight = <RaisedButton label={self.props.downRightLabel} fullWidth={true} />;
+
   	return (
   		<div className="flexContainerColumn flexFill borderLight">
-  			<div className="flexContainerRow">
-	  			<div className="buttonItem">
-	  				<RaisedButton label="Default" style={style} />
-	  			</div>
-	  			<div className="buttonItem">
-	  				<RaisedButton label="Default" style={style} />
-	  			</div>
-	  		</div>
-	  		<div className="flexContainerRow">
-	  			<div className="buttonItem">
-	  				<RaisedButton label="Default" style={style} />
-	  			</div>
-	  			<div className="buttonItem">
-	  				<RaisedButton label="Default" style={style} />
-	  			</div>
-  			</div>
+  			<QuadSection 
+  				upLeft={upLeft}
+  				upRight={upRight}
+  				downLeft={downLeft}
+  				downRight={downRight}
+  			/>
   		</div>
   	)
   }
 }
+
+
+

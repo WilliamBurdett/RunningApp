@@ -1,7 +1,8 @@
 import React from 'react';
-import RunMap from '/client/components/googleMaps'
-import ButtonLayout from '/client/components/buttonLayout'
-import TopBottomSplit from '/client/components/topBottomSplit'
+import RunMap from '/client/components/googleMaps';
+import ButtonLayout from '/client/components/buttonLayout';
+import TopBottomSplit from '/client/components/topBottomSplit';
+import LeftRightSplit from '/client/components/leftRightSplit';
 
 
 export default class StartRun extends React.Component {

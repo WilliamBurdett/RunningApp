@@ -1,4 +1,6 @@
 import React from 'react';
+import TopBottomSplit from '/client/components/topBottomSplit';
+import GraphLayout from '/client/components/graphLayout';
 
 export default class Results extends React.Component {
 	constructor(props){
@@ -10,9 +12,10 @@ export default class Results extends React.Component {
 	}
 
 	render(){
+		var graphs = <GraphLayout />
 		return (
-			<div>
-				<h1>Results</h1>
+			<div className="topParent">
+					<TopBottomSplit bottomSection={graphs} topSection={graphs} />
 			</div>
 		)
 	}
