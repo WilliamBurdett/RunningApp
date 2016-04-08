@@ -5,7 +5,6 @@ export default class RunMap extends React.Component {
   constructor(props){
     super(props);
 
-    console.log("CREATE ME");
     this.state = {
       markers:[]
     }
