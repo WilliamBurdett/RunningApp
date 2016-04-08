@@ -6,6 +6,7 @@ export default class TopLargeWithFourButtons extends React.Component {
   constructor(props){
     super(props);
 
+    console.log("hey");
   }
 
   render(){
