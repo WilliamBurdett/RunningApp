@@ -23,7 +23,7 @@ export default class StartRun extends React.Component {
 
 	render(){
 
-		var runMap = RunMap;
+		var runMap = <RunMap />;
 		return(
 			<div className="topParent">
 					<TopLargeWithFourButtons topSection={runMap} />
