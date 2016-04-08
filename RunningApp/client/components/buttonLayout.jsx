@@ -6,6 +6,7 @@ const style = {
 	width:"98%",
 };
 
+
 export default class ButtonLayout extends React.Component {
 	constructor(props){
 		super(props);
