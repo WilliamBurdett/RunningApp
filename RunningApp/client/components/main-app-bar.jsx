@@ -21,8 +21,6 @@ export default class MainAppBar extends React.Component {
 		Tracker.autorun( () => {
 			var title = MainAppBarTitle.get();
 
-			console.log("title", title);
-
 			self.setState({title:title});
 		})
 	}

@@ -10,11 +10,13 @@ export default class TopLargeWithFourButtons extends React.Component {
   }
 
   render(){
+  	self = this;
+  	console.log(self.props.topSection);
   	return (
   		<div className="flexContainerColumn flexFill borderLight">
   			<div className="topChild flexContainerRow borderLight">
 				<div className="flexContainerRow">
-					Graphs!
+					{self.props.topSection}
 	  			</div>
 			</div>
 			<div className = "topChild flexContainerRow borderLight">
