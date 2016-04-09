@@ -2,6 +2,7 @@ import React from 'react';
 import TopBottomSplit from '/client/components/topBottomSplit';
 import GraphLayout from '/client/components/graphLayout';
 import LeftRightSplit from '/client/components/leftRightSplit';
+import RaisedButton from 'material-ui/lib/raised-button';
 
 
 export default class Progress extends React.Component {
@@ -15,11 +16,14 @@ export default class Progress extends React.Component {
 
 	render(){
 		var graph = <GraphLayout label="My graph"/>
-		var leftRightSplit = <LeftRightSplit leftSection={graph} rightSection={graph}/>
+		var topButton = <RaisedButton label="Change Graph Type" />
+		var bottomButton = <RaisedButton label="Change Graph Type" />
+		var leftSection = <TopBottomSplit topSection={topButton} bottomSection={bottomButton} />
+		var rightSection = <GraphLayout label="My list"/>
+		var leftRightSplit = <LeftRightSplit leftSection={leftSection} rightSection={rightSection}/>
 		return(
 			<div className="topParent">
-					<TopBottomSplit topSection={leftRightSplit} bottomSection={leftRightSplit} />
-					<TopBottomSplit topSection={leftRightSplit} bottomSection={leftRightSplit} />
+					<TopBottomSplit topSection={graph} bottomSection={leftRightSplit} />
 			</div>
 		);
 	}
