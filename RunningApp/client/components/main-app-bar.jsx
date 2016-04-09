@@ -13,8 +13,6 @@ export default class MainAppBar extends React.Component {
 
 		this.onClickMenuToggle = this.onClickMenuToggle.bind(this);
 
-		
-
 		this.state = {
 			title:"Home"
 		}
@@ -39,7 +37,7 @@ export default class MainAppBar extends React.Component {
 		var myTitle = <div className="mainAppBarTitle" >{this.state.title}</div>;
 		return (
 			<AppBar
-		    	title={this.state.title}
+		    	title={myTitle}
 		    	iconClassNameRight="muidocs-icon-navigation-expand-more"
 		    	onLeftIconButtonTouchTap={this.onClickMenuToggle}
 		    	className="mainAppBar"
