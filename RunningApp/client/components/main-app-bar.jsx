@@ -37,10 +37,10 @@ export default class MainAppBar extends React.Component {
 		var myTitle = <div className="mainAppBarTitle" >{this.state.title}</div>;
 		return (
 			<AppBar
-		    	title={myTitle}
+		    	title={this.state.title}
 		    	iconClassNameRight="muidocs-icon-navigation-expand-more"
 		    	onLeftIconButtonTouchTap={this.onClickMenuToggle}
-		    	className="mainAppBar"
+		    	className="flexContainerRow"
 		    />
 		)
 	}
