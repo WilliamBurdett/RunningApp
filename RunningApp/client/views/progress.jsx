@@ -16,11 +16,12 @@ export default class Progress extends React.Component {
 	}
 
 	render(){
-		var graphs = <GraphLayout />
-		var leftRightSplit = <LeftRightSplit />
+		var graph = <GraphLayout label={"My graph"}/>
+		var leftRightSplit = <LeftRightSplit leftSection={graph} rightSection={graph}/>
 		return(
 			<div className="topParent">
-					<TopBottomSplit topSection={graphs} bottomSection={leftRightSplit} />
+					<TopBottomSplit topSection={leftRightSplit} bottomSection={leftRightSplit} />
+					<TopBottomSplit topSection={leftRightSplit} bottomSection={leftRightSplit} />
 			</div>
 		);
 	}
