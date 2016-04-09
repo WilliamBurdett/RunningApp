@@ -4,6 +4,7 @@ import AppBar from 'material-ui/lib/app-bar';
 MainAppBarTitle = new ReactiveVar('Home');
 
 
+
 export default class MainAppBar extends React.Component {
 	constructor(props){
 		super(props);
@@ -35,6 +36,7 @@ export default class MainAppBar extends React.Component {
 		    	title={this.state.title}
 		    	iconClassNameRight="muidocs-icon-navigation-expand-more"
 		    	onLeftIconButtonTouchTap={this.onClickMenuToggle}
+		    	className="mainAppBar"
 		    />
 		)
 	}
