@@ -42,13 +42,6 @@ $margin: auto;
 	margin:10px;
 }
 
-.flexContainerRow{
-	@extend .flexCenteredContainer;
-	@extend .flexFill;
-	flex-wrap:nowrap;
-    flex-direction:row;
-}
-
 .flexCenteredContainer{
   	@extend .flexBasic;
     align-content: center;
@@ -80,6 +73,13 @@ $margin: auto;
 .flexBasic{
 	display: -webkit-flex;
 	display:flex;
+}
+
+.flexContainerRow{
+	@extend .flexCenteredContainer;
+	@extend .flexFill;
+	flex-wrap:nowrap;
+    flex-direction:row;
 }
 
 .flexContainerColumn{

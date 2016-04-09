@@ -43,12 +43,14 @@ export default class Home extends TrackerReact(React.Component){
 	render(){
 		var button = <RaisedButton onTouchTap={this.toggleTracking.bind(this)} label={this.state.isTracking ? "Stop Tracking" : "Start Tracking"} />
 		const location = this.fetchRecentLocation();
-		return <div id="homeDiv">
-			This is the best homepage
-			{JSON.stringify(location)}
-			{button}
-			{/*<RunMap ref="map"/>*/}
-		</div>
+		return (
+			<div id="homeDiv" className="topParent">
+				This is the best homepage
+				{JSON.stringify(location)}
+				{button}
+				{/*<RunMap ref="map"/>*/}
+			</div>
+		)
 	}
 
 	componentWillUnmount(){

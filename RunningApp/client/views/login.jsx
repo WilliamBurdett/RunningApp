@@ -26,7 +26,7 @@ export default class Login extends React.Component{
 
 	render(){
 		return (
-			<div>
+			<div className="topParent">
 				<LogInButtons />
 				<RaisedButton onTouchTap={this.routeToHome} label="Home Page"/>
 			</div>

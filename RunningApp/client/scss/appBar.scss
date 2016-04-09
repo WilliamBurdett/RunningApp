@@ -1,5 +1,6 @@
 .mainAppBar{
-	height:5%;
+	@extend .flexBasic;
+	flex-grow:1;
 }
 
 .mainAppBarTitle{
