@@ -69,7 +69,6 @@ $margin: auto;
 
 .flexItem{
   	@extend .flexBasic;
-  	@extend .borderDark;
 	background-color:#b5b5b7;
 	flex-grow:1;
 	margin-left:1.25%;

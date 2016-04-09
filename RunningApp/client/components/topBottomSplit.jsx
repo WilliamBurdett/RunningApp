@@ -9,7 +9,7 @@ export default class TopBottomSplit extends React.Component {
   render(){
   	self = this;
   	return (
-  		<div className="flexContainerColumn flexFill borderLight">
+  		<div className="flexContainerColumn flexFill borderDark">
   			<div className="topChild flexContainerRow borderLight">
   				{self.props.topSection}
 			</div>

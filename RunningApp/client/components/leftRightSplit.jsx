@@ -9,12 +9,12 @@ export default class LeftRightSplit extends React.Component {
   render(){
   	self = this;
   	return (
-      <div className="flexContainerRow flexFill borderLight">
+      <div className="flexContainerRow flexFill borderDark">
         <div className="topChild flexContainerColumn borderLight">
-          {self.props.topSection}
+          {self.props.leftSection}
         </div>
         <div className = "topChild flexContainerColumn borderLight">
-          {self.props.bottomSection}
+          {self.props.rightSection}
         </div>
       </div>
   	)

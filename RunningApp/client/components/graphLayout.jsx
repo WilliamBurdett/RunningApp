@@ -6,9 +6,10 @@ export default class GraphLayout extends React.Component {
 	}
 
 	render(){
+		var self = this;
 		return(
 			<div className="topParent">
-				Graphs!
+				{self.props.label}
 			</div>
 		)
 	}
